@@ -13,7 +13,7 @@
   ~ information: "Portions copyright [year] [name of copyright owner]".
   ~
   ~ Copyright 2011-2016 ForgeRock AS.
-  ~ Portions Copyrighted 2019-2024 3A Systems LLC.
+  ~ Portions Copyrighted 2019-2025 3A Systems LLC.
   -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
@@ -117,8 +117,8 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.target>8</maven.compiler.target>
-        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+        <maven.compiler.source>11</maven.compiler.source>
 
 
         <!-- Third party dependency versions -->
@@ -127,8 +127,8 @@
         <javascript.maven.plugin.version>2.0.0-alpha-1</javascript.maven.plugin.version>
         <joda-time.version>2.9.4</joda-time.version>
         <h2.version>2.2.220</h2.version>
-        <paxweb.version>4.4.2</paxweb.version>
-        <javax.inject.version>1_2</javax.inject.version>
+        <paxweb.version>9.0.18</paxweb.version>
+        <jakarta.inject.version>2.0.1</jakarta.inject.version>
         <xbean.version>4.5</xbean.version>
         <asm.version>5.0.4</asm.version>
         <!-- quartz 2.x is not compatible yet -->
@@ -420,7 +420,7 @@
             <dependency>
                 <groupId>org.openidentityplatform</groupId>
                 <artifactId>openicf</artifactId>
-                <version>1.7.1</version>
+                <version>1.7.2-SNAPSHOT</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -443,9 +443,9 @@
 
             <!-- Java EE -->
             <dependency>
-                <groupId>javax.servlet</groupId>
-                <artifactId>javax.servlet-api</artifactId>
-                <version>3.0.1</version>
+                <groupId>jakarta.servlet</groupId>
+                <artifactId>jakarta.servlet-api</artifactId>
+                <version>6.0.0</version>
                 <scope>provided</scope>
             </dependency>
 
@@ -624,9 +624,9 @@
                 <version>${rhino.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.apache.servicemix.bundles</groupId>
-                <artifactId>org.apache.servicemix.bundles.javax-inject</artifactId>
-                <version>${javax.inject.version}</version>
+                <groupId>jakarta.inject</groupId>
+                <artifactId>jakarta.inject-api</artifactId>
+                <version>${jakarta.inject.version}</version>
             </dependency>
 
             <dependency>

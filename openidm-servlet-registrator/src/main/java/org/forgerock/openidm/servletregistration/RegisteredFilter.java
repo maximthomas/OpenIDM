@@ -21,12 +21,13 @@
 * your own identifying information:
 * "Portions Copyrighted [year] [name of copyright owner]"
 *
+* Portions Copyrighted 2025 3A Systems LLC.
 */
 package org.forgerock.openidm.servletregistration;
 
 import java.util.UUID;
 
-import javax.servlet.Filter;
+import jakarta.servlet.Filter;
 
 import org.forgerock.json.JsonValue;
 
