@@ -12,12 +12,14 @@
   information: "Portions copyright [year] [name of copyright owner]".
  
   Copyright 2017 ForgeRock AS.
-  Portions Copyright 2024 3A Systems LLC.
+  Portions Copyright 2024-2025 3A Systems LLC.
 ////
 
 :figure-caption!:
 :example-caption!:
 :table-caption!:
+:openidm-version: 6.2.3
+:openidm-version-short: 6.2
 
 
 [#chap-services]
@@ -110,7 +112,7 @@ If you do not provide an absolute path, the project location path is relative to
 
 [NOTE]
 ====
-When we refer to "your project" in ForgeRock's OpenIDM documentation, we're referring to the value of `launcher.project.location`.
+When we refer to "your project" in  Open Identity Platform's OpenIDM documentation, we're referring to the value of `launcher.project.location`.
 ====
 
 * `--working-location` or `-w` `/path/to/working/directory`
@@ -520,7 +522,7 @@ OpenIDM checks all required modules. Examples of those modules are shown here:
 
 [source, console]
 ----
-"org.forgerock.openicf.framework.connector-framework"
+     "org.forgerock.openicf.framework.connector-framework"
      "org.forgerock.openicf.framework.connector-framework-internal"
      "org.forgerock.openicf.framework.connector-framework-osgi"
      "org.forgerock.openidm.audit"
@@ -555,7 +557,7 @@ OpenIDM checks all required services. Examples of those services are shown here:
 
 [source, console]
 ----
-"org.forgerock.openidm.config"
+     "org.forgerock.openidm.config"
      "org.forgerock.openidm.provisioner"
      "org.forgerock.openidm.provisioner.openicf.connectorinfoprovider"
      "org.forgerock.openidm.external.rest"
@@ -714,7 +716,7 @@ To debug custom libraries, you can start OpenIDM with the option to use the Java
 * Start OpenIDM with the `jpda` option:
 +
 
-[source, console]
+[source, console, subs="attributes"]
 ----
 $ cd /path/to/openidm
 $ ./startup.sh jpda
@@ -726,7 +728,7 @@ Using LOGGING_CONFIG:
    -Djava.util.logging.config.file=/path/to/openidm/conf/logging.properties
 Listening for transport dt_socket at address: 5005
 Using boot properties at /path/to/openidm/conf/boot/boot.properties
--> OpenIDM version "4.5.1-20" (revision: xxxx)
+-> OpenIDM version "{openidm-version}" (revision: xxxx)
 OpenIDM ready
 ----
 +
@@ -737,7 +739,7 @@ The relevant JPDA options are outlined in the startup script (`startup.sh`).
 
 [CAUTION]
 ====
-This interface is internal and subject to change. If you depend on this interface, contact ForgeRock support.
+This interface is internal and subject to change. If you depend on this interface, contact Open Identity Platform Approved Vendors support.
 ====
 
 

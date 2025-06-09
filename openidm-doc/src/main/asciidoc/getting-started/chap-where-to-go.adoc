@@ -12,7 +12,7 @@
   information: "Portions copyright [year] [name of copyright owner]".
  
   Copyright 2017 ForgeRock AS.
-  Portions Copyright 2024 3A Systems LLC.
+  Portions Copyright 2024-2025 3A Systems LLC.
 ////
 
 :figure-caption!:
@@ -89,7 +89,7 @@ OpenIDM includes support for connectors to the following external resources:
 
 * Salesforce (see xref:../connectors-guide/chap-salesforce.adoc#chap-salesforce["Salesforce Connector"] in the __Connectors Guide__).
 
-* Any LDAPv3-compliant directory, including link:../../../opendj/3.5/install-guide[OpenDJ, window=\_blank] and Active Directory (see xref:../connectors-guide/chap-ldap.adoc#chap-ldap["Generic LDAP Connector"] in the __Connectors Guide__).
+* Any LDAPv3-compliant directory, including link:../../../opendj/install-guide[OpenDJ, window=\_blank] and Active Directory (see xref:../connectors-guide/chap-ldap.adoc#chap-ldap["Generic LDAP Connector"] in the __Connectors Guide__).
 
 * CSV Files (see xref:../connectors-guide/chap-csv.adoc#chap-csv["CSV File Connector"] in the __Connectors Guide__).
 
@@ -128,7 +128,7 @@ OpenIDM is a lightweight and highly customizable identity management product.
 
 The OpenIDM documentation includes additional use cases. Most of them are known as __Samples__, and are described in xref:../samples-guide/chap-overview.adoc#chap-overview["Overview of the OpenIDM Samples"] in the __Samples Guide__.
 
-These samples include step-by-step instructions on how you can connect to different data stores, customize product behavior using JavaScript and Groovy, and administer OpenIDM with ForgeRock's commons RESTful API commands.
+These samples include step-by-step instructions on how you can connect to different data stores, customize product behavior using JavaScript and Groovy, and administer OpenIDM with Open Identity Platform's commons RESTful API commands.
 
 
 [#gsg-integration]
@@ -193,6 +193,6 @@ Press Return, and enter the following command:
 . OpenIDM is self-contained. After you shut down OpenIDM, you can choose to delete the files in the `/path/to/openidm` directory. OpenIDM includes no artifacts in system registries or elsewhere.
 
 ====
-We hope that you want to continue exploring OpenIDM. To do so, review the rest of the link:../../../openidm/4.5[OpenIDM documentation, window=\_blank].
+We hope that you want to continue exploring OpenIDM. To do so, review the rest of the link:/openidm[OpenIDM documentation, window=\_blank].
 
 

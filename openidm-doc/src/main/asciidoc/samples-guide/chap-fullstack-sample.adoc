@@ -12,7 +12,7 @@
   information: "Portions copyright [year] [name of copyright owner]".
  
   Copyright 2017 ForgeRock AS.
-  Portions Copyright 2024 3A Systems LLC.
+  Portions Copyright 2024-2025 3A Systems LLC.
 ////
 
 :figure-caption!:
@@ -21,9 +21,9 @@
 
 
 [#chap-fullstack-sample]
-== Full Stack Sample - Using OpenIDM in the ForgeRock Identity Platform
+== Full Stack Sample - Using OpenIDM in the Open Identity Platform
 
-This sample demonstrates the integration of three ForgeRock products: OpenIDM, OpenDJ, and OpenAM. With this sample, you can see how you can use OpenAM for authentication, for users maintained with OpenIDM, based on a data store of users in OpenDJ.
+This sample demonstrates the integration of three Open Identity Platform products: OpenIDM, OpenDJ, and OpenAM. With this sample, you can see how you can use OpenAM for authentication, for users maintained with OpenIDM, based on a data store of users in OpenDJ.
 
 It may take some time to set up this sample. The instructions that follow describe how you set up OpenDJ with a custom data store, sync that to OpenIDM. You will also configure OpenAM to use that same instance of OpenDJ. When you finish this sample, you will know how make OpenIDM, OpenDJ, and OpenAM work together. When your setup is complete, OpenIDM will authorize, and OpenAM will protect your users.
 
@@ -67,7 +67,7 @@ When you configure OpenAM, you need the following information to configure OpenD
 
 This sample assumes that you will configure OpenAM on a separate system from OpenIDM.
 
-Install OpenAM as described in link:../../../openam/13/install-guide/#configure-openam-custom[To Custom Configure OpenAM, window=\_blank].
+Install OpenAM as described in link:../../../openam/install-guide/#configure-openam-custom[To Custom Configure OpenAM, window=\_blank].
 
 During the installation process, include the parameters described in xref:#external-ldap-config-full-stack["External OpenDJ Configuration"]. Alternatively, if you already have an operational instance of OpenAM, set up an external instance of OpenDJ as described in link:../../../openam/13/admin-guide/#realm-data-store[To Configure a Data Store, window=\_blank].
 

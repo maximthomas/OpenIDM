@@ -12,12 +12,14 @@
   information: "Portions copyright [year] [name of copyright owner]".
  
   Copyright 2017 ForgeRock AS.
-  Portions Copyright 2024 3A Systems LLC.
+  Portions Copyright 2024-2025 3A Systems LLC.
 ////
 
 :figure-caption!:
 :example-caption!:
 :table-caption!:
+:openidm-version: 6.2.3
+:openidm-version-short: 6.2
 
 
 [#chap-scripting]
@@ -143,7 +145,7 @@ Endpoint configuration files and scripts are discussed further in the following 
 
 An endpoint configuration file includes the following elements:
 
-[source, javascript]
+[source, json]
 ----
 {
     "context" : "endpoint/linkedView/*",
