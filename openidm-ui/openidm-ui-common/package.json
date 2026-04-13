@@ -3,18 +3,15 @@
   "author": "Jake Feasel <jake.feasel@forgerock.com>",
   "version": "0.0.1",
   "private": true,
+  "scripts": {
+    "build": "npm run lint",
+    "lint": "eslint \"src/main/js/**/*.js\" --format eslint-formatter-warning-summary",
+    "default": "npm run build"
+  },
   "devDependencies": {
-    "babel-eslint": "6.0.3",
-    "babel-plugin-check-es2015-constants": "^6.8.0",
-    "babel-plugin-transform-es2015-arrow-functions": "6.5.2",
-    "babel-plugin-transform-es2015-block-scoping": "^6.9.0",
-    "babel-plugin-transform-es2015-computed-properties": "^6.8.0",
-    "babel-plugin-transform-es2015-shorthand-properties": "^6.8.0",
-    "babel-plugin-transform-es2015-template-literals": "^6.8.0",
-    "eslint": "1.10.3",
-    "eslint-formatter-warning-summary": "1.0.1",
-    "grunt": ">=1.5.3",
-    "grunt-cli": "1.2.0",
-    "grunt-eslint": "17.3.2"
+    "@babel/eslint-parser": "^7.28.6",
+    "@babel/preset-env": "^7.29.2",
+    "eslint": "^9.0.0",
+    "eslint-formatter-warning-summary": "^1.0.1"
   }
 }
